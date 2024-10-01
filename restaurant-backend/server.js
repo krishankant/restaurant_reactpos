@@ -27,20 +27,14 @@ app.get("/menu", (req, res) => {
 app.post("/process-payment", (req, res) => {
   const { orderId, total } = req.body;
 
-  if (!orderId || typeof total !== "number") {
+  /*if (!orderId || typeof total !== "number") {
     return res.status(400).json({ success: false, message: "Invalid order data" });
   }
+*/
 
-  // Simulate payment processing
-  const isPaymentSuccessful = Math.random() < 0.9; // 90% success rate
-
-  if (isPaymentSuccessful) {
-    // In a real application, you would save the order to a database here
-    orders.push({ id: orderId, total, status: "completed" });
-    res.json({ success: true, message: "Payment processed successfully" });
-  } else {
-    res.status(400).json({ success: false, message: "Payment processing failed" });
-  }
+  // In a real application, you would save the order to a database here
+  orders.push({ id: orderId, total, status: "completed" });
+  res.json({ success: true, message: "Payment processed successfully" });
 });
 
 // GET /orders endpoint (for demonstration purposes)
