@@ -1,0 +1,43 @@
+.menuItem {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menuItem:hover {
+    transform: translateY(-4px);
+  }
+  
+  .menuItemName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .menuItemPrice {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+  }
+  
+  .menuItemCategory {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 12px;
+  }
+  
+  .addButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .addButton:hover {
+    background-color: #45a049;
+  }
